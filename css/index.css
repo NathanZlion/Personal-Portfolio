@@ -1,6 +1,20 @@
-.bg-dark {
-  background-color: #111315 !important;
+/* define variables to be used*/
+:root {
+  --image-background-color: #481aff;
+  --primary-accent-color: #198754;
+  --download-btn-offset: 8px;
+  --dark-color: #111315;
 }
+
+/* for debugging purpose only */
+*, *::before, *::after {
+  outline: 1px solid red;
+}
+
+.bg-dark {
+  background-color: var(--dark-color) !important;
+}
+
 .under-construction-banner {
   position: fixed;
   top: 340px;
@@ -15,9 +29,9 @@
   text-align: center;
   line-height: 1.2;
   text-shadow: #ffffff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 30px;
-  background: repeating-linear-gradient(-45deg, yellow, yellow 10px, black 10px, black 20px);
+  background: repeating-linear-gradient( -45deg, yellow, yellow 10px, black 10px, black 20px);
   color: black;
 }
 
@@ -26,7 +40,7 @@
   position: relative;
   text-decoration: none;
   color: #000;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 
 .hover-underline-animation::before {
@@ -43,9 +57,52 @@
 }
 
 .hover-underline-animation:hover {
-  color: #ff00ff; /* Change the color to your preferred hover color */
+  color: var(--download-btn-offset);
 }
 
 .hover-underline-animation:hover::before {
   transform: scaleX(1);
+}
+
+.download-icon-outline {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+}
+
+.download-icon {
+  display: inline-block;
+  position: relative;
+  padding: 0!important;
+  right: var(--download-btn-offset);
+  width: 38px;
+  height: 38px;
+  transition: transform 0.2s;
+}
+
+.download-icon:hover {
+  transform: translateX(var(--download-btn-offset));
+}
+
+/* define wave animation */
+@keyframes wave {
+  0% {transform: rotate(-1deg)}
+  10% {transform: rotate(13deg)}
+  20% {transform: rotate(-9deg)}
+  30% {transform: rotate(13deg)}
+  40% {transform: rotate(-5deg)}
+  50% {transform: rotate(10deg)}
+  60% {transform: rotate(0deg)}
+  100% {transform: rotate(0deg)}
+}
+
+/* waving-hand-icon class wave animation when hovered over */
+.waving-hand-icon:hover{
+  animation: wave 1s forwards;
+}
+
+.profile-pic-outline {
+  background-color: var(--image-background-color);
 }
