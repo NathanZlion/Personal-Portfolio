@@ -7,9 +7,9 @@
 }
 
 /* for debugging purpose only */
-*, *::before, *::after {
+/* *, *::before, *::after {
   outline: 1px solid red;
-}
+} */
 
 .bg-dark {
   background-color: var(--dark-color) !important;
