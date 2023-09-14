@@ -1,18 +1,22 @@
-
 .bg-dark {
-    background-color: #111315!important;
+  background-color: #111315 !important;
 }
-
 .under-construction-banner {
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: yellow;
+  top: 340px;
+  left: -99px;
   padding: 10px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 9999;
-  width: 100%;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 620px;
   text-align: center;
+  line-height: 1.2;
+  text-shadow: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  background: repeating-linear-gradient(-45deg, yellow, yellow 10px, black 10px, black 20px);
+  color: black;
 }
-
