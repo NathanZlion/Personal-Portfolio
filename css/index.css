@@ -20,3 +20,32 @@
   background: repeating-linear-gradient(-45deg, yellow, yellow 10px, black 10px, black 20px);
   color: black;
 }
+
+/* a css rule that animated underline when we hover a link */
+.hover-underline-animation {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.hover-underline-animation::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left center;
+}
+
+.hover-underline-animation:hover {
+  color: #ff00ff; /* Change the color to your preferred hover color */
+}
+
+.hover-underline-animation:hover::before {
+  transform: scaleX(1);
+}
