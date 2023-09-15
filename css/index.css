@@ -9,6 +9,12 @@
 /* for debugging purpose only */
 /* *, *::before, *::after { outline: 1px solid red; } */
 
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .bg-dark {
   background-color: var(--dark-color) !important;
 }
@@ -66,14 +72,14 @@
   display: inline-block;
   width: 38px;
   height: 38px;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   border-radius: 100%;
 }
 
 .download-icon {
   display: inline-block;
   position: relative;
-  padding: 0 !important;
+  padding: 0!important;
   right: var(--download-btn-offset);
   width: 38px;
   height: 38px;
@@ -82,12 +88,12 @@
 
 /* download icon animation */
 @keyframes download-icon-animation {
-  0% { transform: translateX(0px) }
-  20% { transform: translateX(20px) }
-  40% { transform: translateX(30px) }
-  60% { transform: translateX(10px) }
-  80% { transform: translateX(18px) }
-  100% { transform: translateX(0px) }
+  0% {transform: translateX(0px)}
+  20% {transform: translateX(20px)}
+  40% {transform: translateX(30px)}
+  60% {transform: translateX(10px)}
+  80% {transform: translateX(18px)}
+  100% {transform: translateX(0px)}
 }
 
 .download-icon.spin {
@@ -96,14 +102,14 @@
 
 /* define wave animation */
 @keyframes wave {
-  0% { transform: rotate(-1deg) }
-  10% { transform: rotate(13deg) }
-  20% { transform: rotate(-9deg) }
-  30% { transform: rotate(13deg) }
-  40% { transform: rotate(-5deg) }
-  50% { transform: rotate(10deg) }
-  60% { transform: rotate(0deg) }
-  100% { transform: rotate(0deg) }
+  0% {transform: rotate(-1deg)}
+  10% {transform: rotate(13deg)}
+  20% {transform: rotate(-9deg)}
+  30% {transform: rotate(13deg)}
+  40% {transform: rotate(-5deg)}
+  50% {transform: rotate(10deg)}
+  60% {transform: rotate(0deg)}
+  100% {transform: rotate(0deg)}
 }
 
 /* waving-hand-icon class wave animation when hovered over */
