@@ -7,12 +7,14 @@
 }
 
 /* for debugging purpose only */
-/* *, *::before, *::after {
-  outline: 1px solid red;
-} */
+/* *, *::before, *::after { outline: 1px solid red; } */
 
 .bg-dark {
   background-color: var(--dark-color) !important;
+}
+
+.z-9999 {
+  z-index: 9999;
 }
 
 .under-construction-banner {
@@ -39,7 +41,7 @@
 .hover-underline-animation {
   position: relative;
   text-decoration: none;
-  color: #000;
+  color: var(--primary-accent-color);
   transition: color 0.1s;
 }
 
@@ -50,14 +52,10 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--primary-accent-color);
   transform: scaleX(0);
   transition: transform 0.3s;
   transform-origin: left center;
-}
-
-.hover-underline-animation:hover {
-  color: var(--download-btn-offset);
 }
 
 .hover-underline-animation:hover::before {
@@ -68,41 +66,107 @@
   display: inline-block;
   width: 38px;
   height: 38px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 100%;
 }
 
 .download-icon {
   display: inline-block;
   position: relative;
-  padding: 0!important;
+  padding: 0 !important;
   right: var(--download-btn-offset);
   width: 38px;
   height: 38px;
   transition: transform 0.2s;
 }
 
-.download-icon:hover {
-  transform: translateX(var(--download-btn-offset));
+/* download icon animation */
+@keyframes download-icon-animation {
+  0% { transform: translateX(0px) }
+  20% { transform: translateX(20px) }
+  40% { transform: translateX(30px) }
+  60% { transform: translateX(10px) }
+  80% { transform: translateX(18px) }
+  100% { transform: translateX(0px) }
+}
+
+.download-icon.spin {
+  animation: download-icon-animation 1s linear;
 }
 
 /* define wave animation */
 @keyframes wave {
-  0% {transform: rotate(-1deg)}
-  10% {transform: rotate(13deg)}
-  20% {transform: rotate(-9deg)}
-  30% {transform: rotate(13deg)}
-  40% {transform: rotate(-5deg)}
-  50% {transform: rotate(10deg)}
-  60% {transform: rotate(0deg)}
-  100% {transform: rotate(0deg)}
+  0% { transform: rotate(-1deg) }
+  10% { transform: rotate(13deg) }
+  20% { transform: rotate(-9deg) }
+  30% { transform: rotate(13deg) }
+  40% { transform: rotate(-5deg) }
+  50% { transform: rotate(10deg) }
+  60% { transform: rotate(0deg) }
+  100% { transform: rotate(0deg) }
 }
 
 /* waving-hand-icon class wave animation when hovered over */
-.waving-hand-icon:hover{
+.waving-hand-icon.wave {
   animation: wave 1s forwards;
 }
 
 .profile-pic-outline {
   background-color: var(--image-background-color);
+  position: absolute;
+  transform: rotate(5deg);
+  max-width: 30em;
+  width: 100%;
+  height: 30em;
+}
+
+/* card related */
+.my-card {
+  padding: 15px;
+  border-radius: 5%;
+  border-left: 1px solid var(--dark-color);
+
+}
+
+.my-card-title {
+  text-align: center;
+}
+
+.my-card-text {
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.my-card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-card-img-top {
+  width: 20%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+/* media query for tablet*/
+@media (max-width: 991.98px) {
+  .profile-pic-outline {
+    position: relative;
+    max-width: 25em;
+    width: 100%;
+    height: 25em;
+  }
+}
+
+/* media query for mobile */
+@media (max-width: 575.98px) {
+  .profile-pic-outline {
+    max-width: 20em;
+    width: 100%;
+    height: 20em;
+    transform: rotate(0deg);
+  }
 }
