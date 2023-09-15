@@ -121,47 +121,59 @@
   background-color: var(--image-background-color);
   position: absolute;
   transform: rotate(5deg);
-  max-width: 30em;
+  max-width: 40em;
   width: 100%;
   height: 30em;
+  margin-inline: auto;
 }
 
 /* card related */
-.my-card {
+.card {
   padding: 15px;
-  border-radius: 5%;
-  border-left: 1px solid var(--dark-color);
-
 }
 
-.my-card-title {
-  text-align: center;
-}
-
-.my-card-text {
-  text-align: center;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.my-card-img-container {
+.card-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.view-project-arrow{
+  transition: transform 0.3s;
+}
 
-.my-card-img-top {
-  width: 20%;
+/* arrow rotates when hovered over */
+.view-project-icon-hover .view-project-arrow{
+  transform: rotate(-45deg);
+}
+
+.view-project-icon-click .view-project-arrow{
+  /* move top right */
+  transform: translate(5px, -5px) rotate(-45deg);
+  transition: transform 0.3s;
+}
+
+.card-img-top {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
 }
 
+
+.project-card-img-container {
+  max-height: 10em;
+}
+
+.project-card-img-container img {
+  height: 100%;
+  object-fit: contain;
+}
+
 /* media query for tablet*/
 @media (max-width: 991.98px) {
   .profile-pic-outline {
     position: relative;
-    max-width: 25em;
+    max-width: 35em;
     width: 100%;
     height: 25em;
   }
@@ -170,7 +182,7 @@
 /* media query for mobile */
 @media (max-width: 575.98px) {
   .profile-pic-outline {
-    max-width: 20em;
+    max-width: 25em;
     width: 100%;
     height: 20em;
     transform: rotate(0deg);
