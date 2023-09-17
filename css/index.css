@@ -16,6 +16,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .bg-dark {
   background-color: var(--dark-color) !important;
 }
