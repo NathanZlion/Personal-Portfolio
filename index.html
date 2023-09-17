@@ -553,7 +553,7 @@
     <div class="row justify-content-center m-0 bg-light">
         <div class="d-flex col-12 col-lg-8 col-md-10 col-sm-12 flex-column align-items-center">
             <div class="text-center mb-5">
-                <div class="fs-4">Let's Connect</div>
+                <div class="fs-4 mt-3">Let's Connect</div>
                <div class="text-muted fs-6">Contact me</div>
             </div>
 
@@ -565,7 +565,7 @@
                     <hr>
                     
                     <!-- email card -->
-                    <div class="card my-4 border-0 shadow-lg p-0">
+                    <div class="card my-4  border border-lg  p-0">
                         <div class="card-body p-4">
                             <div class="d-flex flex-column justify-content-center align-items-center gap-3">
                                 <div class="rounded-pill bg-light p-1">
@@ -594,7 +594,7 @@
                     <!-- email card -->
 
                     <!-- telephone card -->
-                    <div class="card my-5 bg-light border-0 shadow-lg p-0">
+                    <div class="card my-5 border border-lg p-0">
                         <!-- card body -->
                         <div class="card-body p-4">
                             <div class="d-flex flex-column justify-content-center align-items-center gap-3">
@@ -628,22 +628,35 @@
 
                 <!-- mail form -->
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 text-dark text-start fw-bold ">
-                    <h1 class="fs-2">Simple Form</h1>
+                    <h1 class="fs-3">Write Me</h1>
                     <hr>
-                    <form class="needs-validation" action="https://mail.google.com/mail/" method="GET" target="_blank" novalidate>
-                        <div class="form-group mb-5">
-                            <label for="email" class="text-start">Email</label>
-                            <input type="email" class="form-control" id="email" name="to" placeholder="Enter your email" required>
-                            <div class="invalid-feedback"> Please provide a valid email. </div>
+                    <form class="needs-validation" action="https://mail.google.com/mail/u/0/" method="GET" target="_blank" novalidate>
+                        <div class="form-group mb-3">
+                            <label for="name" class="text-start">Name</label>
+                            <input type="text" class="form-control" id="name" name="cc" placeholder="Type your name" required>
+                            <div class="invalid-feedback"> Please provide your name. </div>
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group mb-3">
+                            <label for="email" class="text-start">Email</label>
+                            <input type="email" class="form-control" id="email" name="from" placeholder="Type your email" required>
+                            <div class="invalid-feedback"> Please provide a valid email address. </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="subject" class="text-start">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="su" placeholder="Type the subject" required>
+                            <div class="invalid-feedback"> Please provide the subject of this message. </div>
+                        </div>
+                        <div class="form-group mb-4">
                             <label for="message" class="text-start">Message</label>
-                            <textarea class="form-control" id="message" name="body" rows="5" placeholder="Enter your message"
+                            <textarea class="form-control" id="message" name="body" rows="5" placeholder="Provide some detail..."
                                 required></textarea>
                             <div class="invalid-feedback">
-                                Please enter a message.
+                                Please try to provide some detail aout the message.
                             </div>
                         </div>
+                        <input type="hidden" name="fs" value="1">
+                        <input type="hidden" name="tf" value="cm">
+                        <input type="hidden" name="to" value="nathandere1357@gmail.com">
                         <button type="submit" class="btn btn-primary p-2 fs-5">
                             Send Message
                             <img src="images/paper-plane.svg" alt=">" width="20">
