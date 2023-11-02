@@ -24,13 +24,24 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,900&display=swap"
         rel="stylesheet">
 
+        <!-- make load after the web has loaded -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
     <title>Nathnael Dereje - Portfolio</title>
 </head>
 
 <body>
     <!-- Under Construction Banner -->
     <!-- <div class="under-construction-banner"> <span style=" background-color: #ffc8004d;"> UNDER CONSTRUCTION </span> -->
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <div class="m-0 p-0 bg-dark text-white">
 
@@ -65,28 +76,28 @@
                 </div>
             </div>
         </nav>
-
+        
         <!-- Main Page Section -->
         <div class="container-lg ps-5 pe-5 mt-5 mb-5">
             <div class="container-fluid pb-5">
                 <div class="row col-lg-12 col-md-12 col-sm-12">
                     <div>
-                        <h1 class="display-5 fw-bold"> 🔥 Hi, I'm Nathnael Dereje </h1>
+                        <h1 class="display-5 fw-bold animate__animated animate__slideInLeft "> 🔥 Hi, I'm Nathnael Dereje </h1>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <p class="row fs-6 mb-4">
+                    <p class="row fs-6 mb-4 display-5 fw-bold animate__animated animate__slideInLeft">
                         A fourth year Software engineering student at Addis Ababa University in Addis Ababa, Ethiopia. Eager to solve problems in the REAL WORLD.
                     </p>
                     <div class="row d-flex justify-content-center p-4 align-items-center mb-5 ">
                         <div class="col-lg-6 col-md-8 col-sm-12">
                             <!-- let's talk button -->
                             <a href="#contact"
-                                class="btn btn-outline-secondary badge rounded-pill text-bg-success btn-lg d-flex align-items-center p-2 gap-3 wave-icon-hover-listener">
-                                <!-- a waving hand icon 👋-->
-                                <div class="rounded-pill badge p-2 text-bg-light waving-hand-icon">
+                            class="btn btn-outline-secondary badge rounded-pill text-bg-success btn-lg d-flex align-items-center p-2 gap-3 wave-icon-hover-listener">
+                            <!-- a waving hand icon 👋-->
+                            <div class="rounded-pill badge p-2 text-bg-light waving-hand-icon">
                                     <img src="./images/waving_hand.png" class="" width="30" height="30" alt=">">
                                 </div>
 
@@ -116,17 +127,17 @@
         </div>
         <!-- Main Page Section -->
     </div>
-
+    
 
     <!-- follow me section -->
-    <div class="row container-lg ps-5 pe-5">
-        <div class="col-12 col-lg-6 container-lg">
+    <div class="row container mx-auto">
+        <div class="col-12 col-lg-6">
             <div class="border rounded-4 shadow-lg d-flex flex-wrap align-items-center justify-content-center gap-4 p-3">
                 <a class="d-flex align-items-center justify-content-center gap-2" href="https://www.linkedin.com/in/nathnael-dereje" target="_blank">
                     <!-- LINKED IN -->
                     <img src="images/linkedin.svg" alt="linked in" class="img-fluid" width="25">
 
-                    <span class="text-dark fs-5 hover-underline-animation">Linkedin</span>
+                    <span class="text-dark fs-5 hover-underline-animation">LinkedIn</span>
                 </a>
 
                <a class="d-flex align-items-center justify-content-center gap-2" href="https://github.com/NathanZlion" target="_blank">
@@ -134,18 +145,11 @@
                     <img src="images/github.svg" alt="linked in" class="img-fluid" width="25">
                     <span class="text-dark fs-5 hover-underline-animation">Github</span>
                 </a>
-
-                <a class="d-flex align-items-center justify-content-center gap-2" href="https://mail.google.com/mail/u/0/?to=nathandere1357@gmail.com&fs=1&tf=cm"
-                    target="_blank">
-                    <!-- MAIL📨 -->
-                    <img src="images/mail.svg" alt="linked in" class="img-fluid" width="25">
-                    <span class="text-dark fs-5 hover-underline-animation">Mail</span>
-                </a>
-
+                
                 <a class="d-flex align-items-center justify-content-center gap-2" href="https://leetcode.com/Nathan_Zion/" target="_blank">
                     <!-- Leetcode -->
                     <img src="images/leetcode.svg" alt="linked in" class="img-fluid" width="25">
-                    <span class="text-dark fs-5 hover-underline-animation">Leetcode</span>
+                    <span class="text-dark fs-5 hover-underline-animation">LeetCode</span>
                 </a>
                 
                 <a class="d-flex align-items-center justify-content-center gap-2" href="https://codeforces.com/profile/Nathan_D" target="_blank">
@@ -153,13 +157,19 @@
                     <img src="images/code-forces.svg" alt="linked in" class="img-fluid" width="20">
                     <span class="text-dark fs-5 hover-underline-animation">Codeforces</span>
                 </a>
-
+                
                 <a class="d-flex align-items-center justify-content-center gap-2" href=" tel:+251988173671" target="_blank">
                     <!-- PHONE -->
                     <img src="images/phone.svg" alt="linked in" class="img-fluid" width="20">
-                    <span class="text-dark fs-5 hover-underline-animation">+251-988-17-36-71</span>
+                    <span class="text-dark fs-5 hover-underline-animation">+251-988173671</span>
                 </a>
-
+                
+                <a class="d-flex align-items-center justify-content-center gap-2"
+                    href="https://mail.google.com/mail/u/0/?to=nathandere1357@gmail.com&fs=1&tf=cm" target="_blank">
+                    <!-- MAIL📨 -->
+                    <img src="images/mail.svg" alt="linked in" class="img-fluid" width="25">
+                    <span class="text-dark fs-5 hover-underline-animation">Mail</span>
+                </a>
             </div>
         </div>
         <div class="col-12 col-lg-6">
@@ -169,149 +179,94 @@
     <!-- follow me section -->
 
     <!-- about me section -->
-    <div id="about" class="mt-5">
+    <div data-aos="fade-up" data-aos-duration="2000" id="about" class="my-5 container">
 
         <!-- about me title -->
-        <div class="text-center display-6 fw-bold mt-3 col-12 col-lg-8 col-md-8 col-sm-12 pt-2">
-            📌 A LITTLE ABOUT ME
+        <div class="text-start display-6 fw-bold col-12 mt-5 p-5">
+            📌 About Me
         </div>
 
-        <div class="fs-5 text-center m-5">
-            👋 Hello! I'm Nathnael Dereje, &HorizontalLine;&HorizontalLine;&HorizontalLine;a passionate and driven <span
-            class="hover-underline-animation">Software Developer</span>. I thrive on innoviating solutions to problems
-            and creating elegant and efficient solutions. I am a developer with a strong foundation in coding and
-            problem-solving. I am committed to delivering high-quality solutions that drive success. Currently looking for
-            internship opportunities to gain experience and grow as a developer.
+        <div class="fs-5 text-center my-2 d-flex align-items-center justify-content-center">
+            <ul class="text-start col-10 col-lg-8 d-flex align-items-start flex-column gap-4">
+                
+                <li>👨‍🎓 I am a fourth year Software Engineering student at Addis Ababa University in Addis Ababa, Ethiopia. Expected to gradulate in 2025.</li>
+
+                <!-- solved more than 700 questions on leetcode and codeforces -->
+                <li>👨‍💻 I have solved more than 700 questions on LeetCode and Codeforces.</li>
+
+                <li>🌱 I am currently learning about artificial intelligence and machine learning.</li>
+
+                <li>🤔 I am looking for help with getting an internship.</li>
+            </ul>
+
         </div>
     </div>
     <!-- about me section -->
 
     <!-- skills section -->
-    <div id="skills">
-        <div class="text-center display-5 fw-bold m-auto col-12 col-lg-8 col-md-8 col-sm-12 p-2">
-            📌 I SPECIALISE IN A RANGE OF SKILLS
-        </div>
-
-        <!-- skill group -->
+    <div data-aos="fade-up" data-aos-duration="2000" id="skills" class="my-5 py-5 container-fluid bg-dark">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
 
-                <!-- skill card-->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/react.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end Web Development</h5>
-                            <p class="card-text">
-                                I am a front-end developer with experience in building websites, web applications, and
-                                mobile apps using html, css, javascript, flutter, and react.
-                            </p>
-                        </div>
+            <!-- about me title -->
+            <div class="text-start display-6 fw-bold mt-3 col-12 p-5 text-light">
+                📌 My Skills
+            </div>
+            
+            <!-- a group of icons of my sklls -->  
+            <div class="frontend-skills container col-12 my-3 text-light">
+                <div class="fs-6 my-2">FRONTEND DEVELOPMENT</div>
+                <div class="skill-icons d-flex gap-2 flex-wrap">
+                    <img src="images/html.svg" class="" width="45" alt="...">
+                    <img src="images/css.svg" class="" width="45" alt="...">
+                    <img src="images/javascript.svg" class="" width="45" alt="...">
+                    <img src="images/bootstrap.svg" class="" width="45" alt="...">
+                    <img src="images/react.svg" class="" width="45" alt="...">
+                    <img src="images/flutter.svg" class="" width="45" alt="...">
+                    <img src="images/dart.svg" class="" width="45" alt="...">
+                    <img src="images/tailwind.svg" class="" width="45" alt="...">
+                    <img src="images/nodejs.svg" class="" width="45" alt="...">
+                    <img src="images/typescript.svg" class="" width="45" alt="...">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
+            
+                <div class="frontend-skills my-3 text-light">
+                    <div class="fs-6 my-2 text-center">DATABASE MANAGEMENT</div>
+                    <div class="skill-icons d-flex gap-2 flex-wrap">
+                        <img src="images/mysql.svg" class="" width="45" alt="...">
+                        <img src="images/postgresql.svg" class="" width="45" alt="...">
+                        <img src="images/mongodb.svg" class="" width="45" alt="...">
                     </div>
                 </div>
-                <!-- skill card-->
-
-                <!-- skill card-->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/server.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Backend Development</h5>
-                            <p class="card-text">
-                                I am a back-end developer with experience in building backend services, APIs and
-                                databases. I am familiar with Node.js, Express, dotnet, and Firebase.
-                            </p>
-                        </div>
+            
+                <div class="frontend-skills my-3 text-light ">
+                    <div class="fs-6 my-2 text-center">OTHER SKILLS</div>
+                    <div class="skill-icons d-flex gap-2 flex-wrap">
+                        <img src="images/git.svg" class="" width="45" alt="...">
+                        <img src="images/postman.svg" class="" width="45" alt="...">
+                        <img src="images/java.svg" class="" width="30" alt="...">
                     </div>
                 </div>
-                <!-- skill card-->
-
-                <!-- skill card -->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/database.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Database Management</h5>
-                            <p class="card-text">
-                                I have plenty of experience with setting up and managing diffenent kinds of sql and
-                                noSql databases such as MySQL, PostgreSql, mongodb.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- skill card-->
-
-                <!-- skill card-->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/mobile-app.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mobile App Development</h5>
-                            <p class="card-text">
-                                With extensive experience in Flutter mobile app development, I am skilled in creating
-                                visually appealing and performant applications using Flutter's widget-based framework
-                                and Dart programming language.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- skill card-->
-
-                <!-- skill card-->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/git.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Version Control System</h5>
-                            <p class="card-text">
-                                Experienced in Git, I proficiently manage code repositories, collaborate with teams, and
-                                ensure code integrity by resolving conflicts and utilizing advanced features like
-                                cherry-picking and rebasing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- skill card-->
-
-                <!-- skill card-->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-img-container">
-                            <img src="images/dsa.svg" class="w-25" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Data-structures and Algorithms</h5>
-                            <p class="card-text">
-                                Proficient in data structures, algorithms, and problem-solving, I efficiently tackle
-                                complex programming problems. With experience in implementing and optimizing arrays,
-                                linked lists, trees, and graphs, I utilize sorting, searching, and dynamic programming
-                                algorithms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- skill card-->
 
             </div>
-        </div>
-    </div>
-    <!-- skills section -->
+            <!-- </div> -->
+            </div>
+            
+            </div>
 
     <!-- Projects section -->
-    <div id="projects">
-        <div class="text-start display-5 fw-bold m-auto col-12 col-lg-8 col-md-8 col-sm-12 p-2">📌 A GLIMPSE OF SOME
-            EXCITING PROJECTS 💻 I'VE CONTIBUTED
-            ON 👨‍💻</div>
+    <div id="projects" class="my-5 container">
+        <!-- my works -->
+        <div  class="text-start display-6 fw-bold col-12 p-2  mt-5">
+            📌 Projects
+        </div>
+
+        <!-- a paragraph that tells that I have worked on frontend, backend, mobile and competitive programming. -->
+        <div class="col-10 col-lg-8 mx-auto fs-5">
+            I have experience working on various aspects of software development, including frontend, backend, mobile, and competitive programming.
+        </div> 
+
         <!-- project group -->
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-5">
@@ -515,8 +470,8 @@
             </div>
 
             <!-- Checkout my github button -->
-            <a class="d-flex ps-2" href="https://github.com/NathanZlion" target="_blank">
-                <div class="btn badge mx-auto border mb-5 rounded-pill btn-lg d-flex align-items-center p-4 gap-3">
+            <a class="d-flex" href="https://github.com/NathanZlion" target="_blank">
+                <div class="btn badge mx-auto border mb-5 rounded-pill btn-lg d-flex align-items-center p-4 gap-3 shadow-md">
                     <span class="text-dark fs-6 fw-bold">Checkout My Github Profile</span>
                     <div class="rounded-pill badge">
                         <img src="./images/github.svg" class="" width="30" height="30" alt=">">
@@ -725,6 +680,7 @@
 
     <!-- javascript validationto form -->
     <script>
+
         (function () {
             'use strict';
             window.addEventListener('load', function () {
@@ -742,6 +698,7 @@
                 });
             }, false);
         })();
+
     </script>
 </body>
 
