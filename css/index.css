@@ -3,8 +3,17 @@
   --image-background-color: #481aff;
   --primary-accent-color: #198754;
   --download-btn-offset: 8px;
-  --dark-color: #111315;
+  --dark-color: #181a1f;
+  --animate-duration: 5000ms;
+  --animate-delay: 10s;
 }
+
+
+.animate__animated.animate__bounce {
+  --animate-duration: 1s;
+  --animate-delay: 0.5s;
+  animation-iteration-count: infinite;
+} */
 
 /* for debugging purpose only */
 /* *, *::before, *::after { outline: 1px solid red; } */
@@ -98,10 +107,10 @@ a:hover {
 /* download icon animation */
 @keyframes download-icon-animation {
   0% {transform: translateX(0px)}
-  20% {transform: translateX(20px)}
-  40% {transform: translateX(30px)}
+  20% {transform: translateX(18px)}
+  40% {transform: translateX(25px)}
   60% {transform: translateX(10px)}
-  80% {transform: translateX(18px)}
+  80% {transform: translateX(15px)}
   100% {transform: translateX(0px)}
 }
 
