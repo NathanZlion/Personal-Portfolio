@@ -1,7 +1,7 @@
 /* define variables to be used*/
 :root {
   --image-background-color: #481aff;
-  --primary-accent-color: #198754;
+  --primary-accent-color: #e1fff1;
   --download-btn-offset: 8px;
   --dark-color: #181a1f;
   --animate-duration: 5000ms;
@@ -130,6 +130,43 @@ a:hover {
   100% {transform: rotate(0deg)}
 }
 
+#home {
+  /* a cool animation gif should be added to the backgournd */
+  background-image: url("../images/particle-strokes.svg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+#about {
+  background: linear-gradient(to bottom, #181a1f, #002f6cb4, #181a1f);
+  animation: gradientAnimation 3s ease infinite;
+}
+
+#projects {
+  background: linear-gradient(to bottom, #181a1f, #002f6cb4, #181a1f);
+  animation: gradientAnimation 3s ease infinite;
+}
+
+#achievements {
+  /*  a little tilted gradient */
+  background: linear-gradient(to bottom, #181a1f, #b6570a3f, #181a1f);
+  animation: gradientAnimation 1s alternate-reverse infinite;
+}
+
 /* waving-hand-icon class wave animation when hovered over */
 .waving-hand-icon.wave {
   animation: wave 1s forwards;
@@ -158,6 +195,8 @@ a:hover {
 /* card related */
 .card {
   padding: 15px;
+  background-color: rgba(255, 255, 255, 0.091);
+  color: white;
 }
 
 .card-img-container {
@@ -165,6 +204,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .view-project-arrow{
   transition: transform 0.3s;
 }

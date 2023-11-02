@@ -43,7 +43,7 @@
         AOS.init();
     </script>
 
-    <div class="m-0 p-0 bg-dark text-white" id="home">
+    <div class="m-0 p-0 bg-dark text-white">
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-dark text-white">
@@ -102,7 +102,7 @@
                                 </div>
 
                                 <!-- let's talk text -->
-                                <span class="fs-6 fw-bold">LET'S TALK</span>
+                                <span class="text-dark fs-6 fw-bold">LET'S TALK</span>
                             </a>
                         </div>
                         <a href="./static/resume.pdf" class="col-lg-6 col-md-8 col-sm-12 rounded-pill download-icon-hover-listener" download>
@@ -186,37 +186,34 @@
             📌 About Me
         </div>
 
-        <div class="fs-5 text-center container my-2">
-            <ul class="text-start d-flex align-items-start justify-content-start flex-column gap-4">
+        <div class="fs-5 text-center my-2 d-flex align-items-center justify-content-center">
+            <ul class="text-start col-10 col-lg-8 d-flex align-items-start flex-column gap-4">
+                
+                <li>👨‍🎓 I am a fourth year Software Engineering student at Addis Ababa University in Addis Ababa, Ethiopia. Expected to gradulate in 2025.</li>
 
-                <li>👨‍🎓 I am a fourth year Software Engineering student at Addis Ababa University in Addis Ababa, Ethiopia.</li>
-
-                <li>🎓 Expected to gradulate in 2025.</li>
-
+                <!-- solved more than 700 questions on leetcode and codeforces -->
                 <li>👨‍💻 I have solved more than 700 questions on LeetCode and Codeforces.</li>
 
                 <li>🌱 I am currently learning about artificial intelligence and machine learning.</li>
 
                 <li>🤔 I am looking for help with getting an internship.</li>
             </ul>
-        </div>
 
+        </div>
     </div>
     <!-- about me section -->
 
     <!-- skills section -->
-    <div data-aos="fade-up" data-aos-duration="2000" id="skills" class="my-5 py-5 container-fluid">
+    <div data-aos="fade-up" data-aos-duration="2000" id="skills" class="my-5 py-5 container-fluid bg-dark">
         <div class="container">
 
             <!-- about me title -->
             <div class="text-start display-6 fw-bold col-12 pb-3 text-light">
                 📌 My Skills
             </div>
-
-            <div class="d-flex justify-content-start align-items-center flex-wrap gap-5">
-
-            <div class="frontend-skills my-3 text-light">
-
+            
+            <!-- a group of icons of my sklls -->  
+            <div class="frontend-skills container col-12 my-3 text-light">
                 <div class="fs-6 my-2">FRONTEND DEVELOPMENT</div>
                 <div class="skill-icons d-flex gap-2 flex-wrap">
                     <img src="images/html.svg" class="" width="45" alt="...">
@@ -230,8 +227,9 @@
                     <img src="images/nodejs.svg" class="" width="45" alt="...">
                     <img src="images/typescript.svg" class="" width="45" alt="...">
                 </div>
-                </div>
+            </div>
 
+            <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
             
                 <div class="frontend-skills my-3 text-light">
                     <div class="fs-6 my-2 text-center">DATABASE MANAGEMENT</div>
@@ -253,19 +251,19 @@
 
             </div>
             <!-- </div> -->
-        </div>
+            </div>
             
-    </div>
+            </div>
 
     <!-- Projects section -->
-    <div data-aos="fade-up" data-aos-duration="2000" id="projects" class="my-5 py-5 container-fluid">
-
+    <div id="projects" class="my-5 container">
         <!-- my works -->
-        <div  class="text-start display-6 fw-bold col-12 p-2">
+        <div  class="text-start display-6 fw-bold col-12 p-2  mt-5">
             📌 Projects
         </div>
 
-        <div class="container">
+        <!-- a paragraph that tells that I have worked on frontend, backend, mobile and competitive programming. -->
+        <div class="col-10 col-lg-8 mx-auto fs-5">
             I have experience working on various aspects of software development, including frontend, backend, mobile, and competitive programming.
         </div> 
 
@@ -287,14 +285,14 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge">JAVA</div>
-                            <div class="border border-dark m-1 p-2 px-4 text-outline-light rounded-pill badge ">JAVA SWING</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">JAVA</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">JAVA SWING</div>
                         </div>
     
                         <!-- view project button -->
                         <a class="d-flex ps-2" href="https://github.com/NathanZlion/tetris-in-java" target="_blank">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -307,7 +305,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-lg">
                         <div class="card-img-container border rounded-1 project-card-img-container">
-                            <img src="static/images/infoblender-logo.png" class="img-fluid" alt="...">
+                            <img src="images/dummy-img.png" class="" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">InfoBlender</h5>
@@ -318,17 +316,17 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">TypeScript</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Javascript</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Express.js</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Flutter</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">React.js</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">TypeScript</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Javascript</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Express.js</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Flutter</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">React.js</div>
                         </div>
     
                         <!-- view project button -->
                         <a class="d-flex ps-2" href="https://github.com/NathanZlion/Info_Blend" target="_blank">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -351,14 +349,14 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Python</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Pygame</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Python</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Pygame</div>
                         </div>
     
                         <!-- view project button -->
                         <a class="d-flex ps-2" href="https://github.com/NathanZlion/Abarosh_chasing_game" target="_blank">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -381,15 +379,15 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Python</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge "> CLI </div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge "> Sqlite3 </div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Python</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark"> CLI </div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark"> Sqlite3 </div>
                         </div>
     
                         <!-- view project button -->
                         <a class="d-flex ps-2" href="https://github.com/NathanZlion/Learning-Progress-Tracker-CLI-APP" target="_blank">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -412,17 +410,17 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Dart</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Flutter</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Nest</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">TypeScript</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">TypeScript</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Dart</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Flutter</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Nest</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">TypeScript</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">TypeScript</div>
                         </div>
     
                         <!-- view project button -->
                         <div class="d-flex ps-2">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -450,17 +448,18 @@
                         </div>
                         <!-- badges of used frameworks -->
                         <div class="d-flex flex-wrap align-items-center justify-content-start ps-2">
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Java</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Compiler</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">Java Swing</div>
-                            <div class="border border-light m-1 p-2 px-4 text-outline-light rounded-pill badge ">OOP</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Java</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Chrome Extension</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Cybersecurity</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Express.js</div>
+                            <div class="border border-dark m-1 p-2 px-4 text-outline-dark rounded-pill badge text-dark">Malware</div>
 
                         </div>
     
                         <!-- view project button -->
                         <a class="d-flex ps-2" href="https://github.com/NathanZlion/javaToMips" target="_blank">
                             <div class="btn badge rounded-2 btn-lg d-flex align-items-center p-2 gap-3 view-project-icon-listener">
-                                <span class="fs-6 fw-bold">View Project</span>
+                                <span class="text-dark fs-6 fw-bold">View Project</span>
                                 <div class="rounded-pill badge view-project-arrow">
                                     <img src="./images/arrow-circle-right.svg" class="" width="40" height="40>">
                                 </div>
@@ -523,14 +522,14 @@
 
                 <!-- talk to me -->
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 p-5 m-0  text-center display-5 fw-bold">
-                    <div class="fs-3 w-100">Contact Me</div>
+                    <div class="fs-3 w-100">Talk to me</div>
                     <hr>
                     
                     <!-- email card -->
                     <div class="card my-4  border border-lg  p-0">
                         <div class="card-body p-4">
                             <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-                                <div class="rounded-pill p-1">
+                                <div class="rounded-pill bg-secondary p-1">
                                     <img src="./images/mail.svg" class="img-fluid" width="30" height="30" alt="Mail Icon">
                                 </div>
 
@@ -538,7 +537,7 @@
 
                                 <!-- email address -->
                                 <div class="fs-6">
-                                    <div class="text-decoration-none text-light"> nathandere1357@gmail.com </div>
+                                    <div class="text-decoration-none text-muted"> nathandere1357@gmail.com </div>
                                 </div>
                                 <!-- email address -->
 
@@ -563,14 +562,15 @@
                         <div class="card-body p-4">
                             <div class="d-flex flex-column justify-content-center align-items-center gap-3">
                                 <div class="rounded-pill  p-1">
-                                    <img src="./images/phone.svg" class="img-fluid" width="30" height="30" alt="Mail Icon">
+                                    <img src="./images/phone.svg" class="img-fluid" width="30" height="30"
+                                        alt="Mail Icon" style="fill: black; color:black; background-color: black;">
                                 </div>
 
                                 <div class="fs-6"> Call </div>
 
                                 <!-- telephone number -->
                                 <div class="fs-6">
-                                    <div class="text-decoration-none text-light"> +251 988173671 </div>
+                                    <div class="text-decoration-none text-muted"> +251 988173671 </div>
                                 </div>
                                 <!-- telephone number -->
 
@@ -656,46 +656,21 @@
                     </li>
                 </ul>
 
-            <div class="border rounded-4 shadow-lg d-flex flex-wrap align-items-center justify-content-center gap-4 p-3">
-                <a class="d-flex align-items-center justify-content-center gap-2" href="https://www.linkedin.com/in/nathnael-dereje" target="_blank">
-                    <!-- LINKED IN -->
-                    <img src="images/linkedin.svg" alt="linked in" class="img-fluid" width="25">
-
-                    <span class="fs-5 hover-underline-animation">LinkedIn</span>
-                </a>
-
-               <a class="d-flex align-items-center justify-content-center gap-2" href="https://github.com/NathanZlion" target="_blank">
-                    <!-- GITHUB -->
-                    <img src="images/github.svg" alt="linked in" class="img-fluid" width="25">
-                    <span class="fs-5 hover-underline-animation">Github</span>
-                </a>
-                
-                <a class="d-flex align-items-center justify-content-center gap-2" href="https://leetcode.com/Nathan_Zion/" target="_blank">
-                    <!-- Leetcode -->
-                    <img src="images/leetcode.svg" alt="linked in" class="img-fluid" width="25">
-                    <span class="fs-5 hover-underline-animation">LeetCode</span>
-                </a>
-                
-                <a class="d-flex align-items-center justify-content-center gap-2" href="https://codeforces.com/profile/Nathan_D" target="_blank">
-                    <!-- CODEFORCES -->
-                    <img src="images/code-forces.svg" alt="linked in" class="img-fluid" width="20">
-                    <span class="fs-5 hover-underline-animation">Codeforces</span>
-                </a>
-                
-                <a class="d-flex align-items-center justify-content-center gap-2" href=" tel:+251988173671" target="_blank">
-                    <!-- PHONE -->
-                    <img src="images/phone.svg" alt="linked in" class="img-fluid" width="20">
-                    <span class="fs-5 hover-underline-animation">+251-988173671</span>
-                </a>
-                
-                <a class="d-flex align-items-center justify-content-center gap-2"
-                    href="https://mail.google.com/mail/u/0/?to=nathandere1357@gmail.com&fs=1&tf=cm" target="_blank">
-                    <!-- MAIL📨 -->
-                    <img src="images/mail.svg" alt="linked in" class="img-fluid" width="25">
-                    <span class="fs-5 hover-underline-animation">Mail</span>
-                </a>
-            </div>
-                <div class="text-light opacity-50"> Made with ❤️ by Nathnael Dereje </div>
+                <div class="d-flex justify-content-center align-items-end mb-5 gap-3">
+                    <a class="rounded-pill bg-light p-1" href="https://mail.google.com/mail/u/0/?to=nathandere1357@gmail.com&fs=1&tf=cm" target="_blank">
+                        <img src="./images/mail.svg" class="img-fluid" width="30" height="30" alt="Mail Icon">
+                    </a>
+                    <a class="rounded-pill bg-light p-1" href="https://t.me/Nathanzgreat" target="_blank">
+                        <img src="images/telegram.svg" class="img-fluid" width="30" height="30" alt="Telegram Icon">
+                    </a>
+                    <a class="rounded-pill bg-light p-1" href="https://github.com/NathanZlion" target="_blank">
+                        <img src="./images/github.svg" class="img-fluid" width="30" height="30" alt="GitHub Icon">
+                    </a>
+                    <a class="rounded-pill bg-light p-1" href="https://www.linkedin.com/in/nathnael-dereje/" target="_blank">
+                        <img src="./images/linkedin.svg" class="img-fluid" width="30" height="30" alt="LinkedIn Icon">
+                    </a>
+                </div>
+                <div class="text-light opacity-50">&copy; 2021 Nathnael Dereje. All Rights Reserved.</div>
             </div>
         </div>
     </footer>
