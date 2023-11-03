@@ -16,17 +16,21 @@
 } */
 
 /* for debugging purpose only */
-/* *, *::before, *::after { outline: 1px solid red; } */
+*, *::before, *::after { outline: 1px solid red !important; }
 
 *, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Fraunces", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
